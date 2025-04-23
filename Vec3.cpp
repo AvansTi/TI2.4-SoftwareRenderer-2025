@@ -11,7 +11,7 @@ Vec3::Vec3() : x(0), y(0), z(0)
 
 Vec3 Vec3::normalized()
 {
-	float length = sqrt(x * x + y * y + z * z);
+	float length = (float)sqrt(x * x + y * y + z * z);
 	return Vec3(x / length, y / length, z / length);
 }
 
